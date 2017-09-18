@@ -1,0 +1,46 @@
+.scene path {
+	fill: #b9e194;
+}
+
+.menu {
+	width: 100%;
+	height: 100vh;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	position: relative;
+	z-index: 900;
+	padding-bottom: 10vh;
+	color: #72ae3a;
+}
+
+.menu__title {
+	font-weight: normal;
+	text-transform: uppercase;
+	letter-spacing: 0.325em;
+	font-size: 1em;
+	margin: 0 0 0.35em;
+	padding: 0 0.25em 0.25em;
+	border-bottom: 1px solid;
+}
+
+.menu__subtitle {
+	text-transform: uppercase;
+	font-size: 0.75em;
+	letter-spacing: 0.225em;
+	margin: 0 0 10vh;
+	font-weight: normal;
+}
+
+.menu__item {
+	font-family: 'Arapey', serif;
+	color: #333;
+	font-size: 2.5em;
+	padding: 0.25em 0;
+}
+
+.menu__item:hover, 
+.menu__item:focus {
+	color: var(--color-link);
+}

@@ -1,0 +1,12 @@
+.title {
+	color: #fff;
+	font-size: 6vw;
+	font-weight: 400;
+	z-index: 1000;
+	font-family: "Arapey", serif;
+	pointer-events: none;
+}
+
+.scene path {
+	fill: #171817;
+}

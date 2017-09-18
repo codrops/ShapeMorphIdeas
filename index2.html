@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Organic Shape Morph Ideas | Demo 2 | Codrops</title>
+		<meta name="description" content="Ideas for decorative organic shape animations" />
+		<meta name="keywords" content="animation, svg, organic, morphing, shapes, css, javascript, web design, web dev" />
+		<meta name="author" content="Codrops" />
+		<link rel="shortcut icon" href="favicon.ico">
+		<link href="https://fonts.googleapis.com/css?family=Roboto:400,700,700i|Arapey" rel="stylesheet">
+		<link rel="stylesheet" type="text/css" href="css/normalize.css" />
+		<link rel="stylesheet" type="text/css" href="css/demo.css" />
+		<link rel="stylesheet" type="text/css" href="css/demo2.css" />
+		<link rel="stylesheet" type="text/css" href="pater/pater.css" />
+		<script>document.documentElement.className="js";var supportsCssVars=function(){var e,t=document.createElement("style");return t.innerHTML="root: { --tmp-var: bold; }",document.head.appendChild(t),e=!!(window.CSS&&window.CSS.supports&&window.CSS.supports("font-weight","var(--tmp-var)")),t.parentNode.removeChild(t),e};supportsCssVars()||alert("Please view this demo in a modern browser that supports CSS Variables.");</script>
+	</head>
+	<body class="demo-2">
+		<svg class="hidden">
+			<symbol id="icon-arrow" viewBox="0 0 24 24">
+				<title>arrow</title>
+				<polygon points="6.3,12.8 20.9,12.8 20.9,11.2 6.3,11.2 10.2,7.2 9,6 3.1,12 9,18 10.2,16.8 "/>
+			</symbol>
+			<symbol id="icon-drop" viewBox="0 0 24 24">
+				<title>drop</title>
+				<path d="M12,21c-3.6,0-6.6-3-6.6-6.6C5.4,11,10.8,4,11.4,3.2C11.6,3.1,11.8,3,12,3s0.4,0.1,0.6,0.3c0.6,0.8,6.1,7.8,6.1,11.2C18.6,18.1,15.6,21,12,21zM12,4.8c-1.8,2.4-5.2,7.4-5.2,9.6c0,2.9,2.3,5.2,5.2,5.2s5.2-2.3,5.2-5.2C17.2,12.2,13.8,7.3,12,4.8z"/><path d="M12,18.2c-0.4,0-0.7-0.3-0.7-0.7s0.3-0.7,0.7-0.7c1.3,0,2.4-1.1,2.4-2.4c0-0.4,0.3-0.7,0.7-0.7c0.4,0,0.7,0.3,0.7,0.7C15.8,16.5,14.1,18.2,12,18.2z"/>
+			</symbol>
+			<symbol id="icon-github" viewBox="0 0 32.6 31.8">
+				<title>github</title>
+				<path d="M16.3,0C7.3,0,0,7.3,0,16.3c0,7.2,4.7,13.3,11.1,15.5c0.8,0.1,1.1-0.4,1.1-0.8c0-0.4,0-1.4,0-2.8c-4.5,1-5.5-2.2-5.5-2.2c-0.7-1.9-1.8-2.4-1.8-2.4c-1.5-1,0.1-1,0.1-1c1.6,0.1,2.5,1.7,2.5,1.7c1.5,2.5,3.8,1.8,4.7,1.4c0.1-1.1,0.6-1.8,1-2.2c-3.6-0.4-7.4-1.8-7.4-8.1c0-1.8,0.6-3.2,1.7-4.4C7.4,10.7,6.8,9,7.7,6.8c0,0,1.4-0.4,4.5,1.7c1.3-0.4,2.7-0.5,4.1-0.5c1.4,0,2.8,0.2,4.1,0.5c3.1-2.1,4.5-1.7,4.5-1.7c0.9,2.2,0.3,3.9,0.2,4.3c1,1.1,1.7,2.6,1.7,4.4c0,6.3-3.8,7.6-7.4,8c0.6,0.5,1.1,1.5,1.1,3c0,2.2,0,3.9,0,4.5c0,0.4,0.3,0.9,1.1,0.8c6.5-2.2,11.1-8.3,11.1-15.5C32.6,7.3,25.3,0,16.3,0z"/>
+			</symbol>
+			<symbol id="icon-keyboard" viewBox="0 0 100 70">
+				<title>keyboard</title>
+				<!-- https://thenounproject.com/term/keyboard/783/ by Paul te Kortschot from the Noun Project -->
+				<path d="M 60.94,1.83 39.22,1.83 C 36.71,1.83 34.67,3.86 34.67,6.376 L 34.67,28.1 C 34.67,30.61 36.71,32.65 39.22,32.65 L 60.94,32.65 C 63.45,32.65 65.5,30.61 65.5,28.1 L 65.5,6.376 C 65.5,3.86 63.45,1.83 60.94,1.83 Z M 44.79,18.63 50.08,11.74 55.37,18.63 Z" opacity="0.2"/>
+				<path d="M 60.86,36.75 39.14,36.75 C 36.63,36.75 34.59,38.79 34.59,41.3 L 34.59,63.02 C 34.59,65.53 36.63,67.57 39.14,67.57 L 60.86,67.57 C 63.38,67.57 65.41,65.53 65.41,63.02 L 65.41,41.3 C 65.42,38.79 63.38,36.75 60.86,36.75 Z M 50.08,57.45 44.79,50.55 55.37,50.55 Z" opacity="0.2" />
+				<path d="M 95.45,36.75 73.73,36.75 C 71.22,36.75 69.18,38.79 69.18,41.3 L 69.18,63.02 C 69.18,65.53 71.22,67.57 73.73,67.57 L 95.45,67.57 C 97.97,67.57 100,65.53 100,63.02 L 100,41.3 C 100,38.79 97.97,36.75 95.45,36.75 Z M 83.4,57.45 83.4,46.86 90.3,52.16 Z" />
+				<path d="M 26.27,36.75 4.55,36.75 C 2.037,36.75 0,38.79 0,41.3 L 0,63.02 C 0,65.53 2.037,67.57 4.55,67.57 L 26.27,67.57 C 28.78,67.57 30.82,65.53 30.82,63.02 L 30.82,41.3 C 30.82,38.79 28.78,36.75 26.27,36.75 Z M 16.69,57.45 9.79,52.16 16.69,46.86 Z" />
+			</symbol>
+		</svg>
+		<main>
+			<div class="message">Please view this demo on a desktop.</div>
+			<div class="content content--fixed">
+				<header class="codrops-header">
+					<div class="codrops-links">
+						<a class="codrops-icon codrops-icon--prev" href="https://tympanus.net/Development/MorphingPageTransition/" title="Previous Demo"><svg class="icon icon--arrow"><use xlink:href="#icon-arrow"></use></svg></a>
+						<a class="codrops-icon codrops-icon--drop" href="https://tympanus.net/codrops/?p=32314" title="Back to the article"><svg class="icon icon--drop"><use xlink:href="#icon-drop"></use></svg></a>
+					</div>
+					<h1 class="codrops-header__title">Organic Shape Morph Ideas</h1>
+					<span class="info">Hover the menu items</span>
+				</header>
+				<a class="github" href="https://github.com/codrops/ShapeMorphIdeas/" title="Find this project on GitHub"><svg class="icon icon--github"><use xlink:href="#icon-github"></use></svg></a>
+				<nav class="demos">
+					<svg class="icon icon--keyboard"><use xlink:href="#icon-keyboard"></use></svg>
+					<a class="demo" href="index.html"><span>Demo 1</span></a>
+					<a class="demo demo--current" href="index2.html"><span>Demo 2</span></a>
+					<a class="demo" href="index3.html"><span>Demo 3</span></a>
+					<a class="demo" href="index4.html"><span>Demo 4</span></a>
+					<a class="demo" href="index5.html"><span>Demo 5</span></a>
+				</nav>
+				<a class="pater pater--theme-alt" href="http://go.hackingui.com/JetpackCodrops190917" rel="nofollow" onClick="recordOutboundLink(this, 'Outbound Links', 'JetpackCodrops190917');return false;">
+					<img height="0" width="0" src="http://pixel.watch/0jgz" />
+					<div class="pater__img"><div class="pater__img-inner"></div></div>
+					<h3 class="pater__title">Jetpack Professional - the only WordPress plugin you really need</h3>
+					<p class="pater__description">Includes premium themes, business class security, and priority, expert support.</p>
+				</a>
+			</div>
+			<div class="content">
+				<svg class="scene" width="100%" height="100vh" preserveAspectRatio="none" viewBox="0 0 1440 800" xmlns:shape="http://www.codrops.com/">
+					<path d="M 1547,-276.7 C 1303,-460.6 937.9,-229.4 632.5,-221.5 343.4,-214.1 -24.61,-427.7 -234.9,-229.3 -406.4,-67.51 -297.6,242.9 -269.7,477 -246.4,672.5 -254.1,917.6 -102.9,1044 91.22,1206 398.7,1112 651.1,1124 993.6,1140 1435,1352 1680,1112 1845,950.8 1724,650 1703,420.2 1680,183.2 1738,-133.5 1547,-276.7 Z M 1442,855.2 C 1291,1033 945.4,942.6 694.5,939.3 455.7,936.2 142.9,1020 -15,840.9 -208.8,621 -229,172.5 -25.48,-38.47 149.7,-220 478.9,-63.42 731.1,-56.65 981.2,-49.94 1314,-185.7 1479,1.626 1668,214.8 1599,670.8 1442,855.2 Z"></path>
+				</svg>
+				<nav class="menu">
+					<h2 class="menu__title">University of Rivermouth</h2>
+					<h2 class="menu__subtitle">Department of Microbiology</h2>
+					<a class="menu__item" href="#" data-shape="M 1134,106.7 C 981,64.12 874.3,336 715.7,333.7 564.5,331.5 470.5,70.27 323.6,105.8 208.9,133.6 134.6,285.9 132.7,403.9 131,512.5 170.8,651.8 299.5,683.7 434.2,699.3 573.5,562.2 719.2,561.8 875.2,561.3 1034,737 1169,689.8 1280,646.5 1312,508 1307,401.7 1302,287.8 1244,137.2 1134,106.7 Z M 1164,567.4 C 1046,667.6 867,463.6 712.2,457.5 566.5,451.8 379.1,634.7 280.3,527.4 220,461.9 265.6,309.2 344.7,268.3 462.7,207.3 582.9,417.3 715.7,413.7 870.2,409.5 1005,142.8 1138,221.5 1238,280.4 1252,492.6 1164,567.4 Z">Faculty &amp; Research</a>
+					<a class="menu__item" href="#" data-shape="M 1083,99.03 C 997,65.26 901.8,138.7 809.6,144.3 645.6,154.2 460.2,42.33 317.1,123.2 243,165.2 192.6,262.5 194.9,347.7 196.2,395.8 234.7,438.5 270.6,470.5 407.4,592.5 586.2,686.3 768.7,703.6 828.6,709.3 893.7,692.9 943.5,659.2 1074,571.3 1224,435.9 1222,278.8 1221,203.1 1154,126.7 1083,99.03 Z M 1012,430.2 C 881.1,510.2 702.6,475.4 552.1,445.8 474.6,430.6 376.9,416.4 336,348.9 319.2,321.3 319.3,275.4 341.7,252.1 454.4,135.2 664.2,204.4 826.6,205.1 924.9,205.5 1075,148.7 1120,236 1154,301.7 1075,391.6 1012,430.2 Z">Graduate Courses</a>
+					<a class="menu__item" href="#" data-shape="M 922.5,94.25 C 848.5,86.55 759.2,100.7 712.4,169.7 671,230.7 640,314 570.9,339.9 474.7,375.9 336.1,214.6 266.8,290.4 174.1,391.7 248.9,622.8 369,689.4 517.7,771.9 685.7,547.7 855.3,535.2 945.6,528.5 1049,629 1124,578.3 1213,517.7 1237,361.5 1195,261.9 1154,163.7 1029,105.2 922.5,94.25 Z M 1080,526.6 C 1019,570.3 935.9,468.4 860.4,471.3 693.2,477.5 535.2,701.9 384.1,630 340.9,609.6 307.8,536.5 333.3,496.2 384.1,416 525.7,499.3 617.1,473.9 792.9,425.1 955.8,126.5 1107,229.2 1189,285.2 1162,469 1080,526.6 Z">Seminars</a>
+					<a class="menu__item" href="#" data-shape="M 1066,145.2 C 994.2,61.38 844,107.9 735.5,127.7 643,144.5 550.5,181.9 477.3,240.8 424.5,283.3 382.5,342.2 358,405.3 337.9,457.1 325.4,517.2 339.3,571 352.6,622.5 379.6,690.2 431.7,701.2 494.7,714.6 538.6,627.7 597.9,602.6 735.5,544.3 933.6,598.8 1031,485 1104,398.2 1140,231.8 1066,145.2 Z M 1046,353.6 C 971.7,469.1 777,420.5 655.1,483.5 566.3,529.3 496.5,716 413.3,660.8 296.7,583.4 412.6,352.5 510.4,252.6 583.2,178.3 709.3,188.1 812.4,174.1 882.9,164.5 972.4,123.8 1026,170.8 1072,211.3 1079,302 1046,353.6 Z">Alumni</a>
+					<a class="menu__item" href="#" data-shape="M 1099,264.1 C 1002,188.6 913.1,83.49 792.6,58.7 651.6,29.69 479.4,46.51 368.2,137.9 287.3,204.5 256,325.2 252,429.9 248.9,508.5 272.2,594.3 321.8,655.2 363,705.7 428.2,742.8 493,749.5 713,772.1 975.6,715.3 1127,554.2 1178,499.9 1202,408 1180,336.8 1169,302.2 1127,286.4 1099,264.1 Z M 1083,419.7 C 1087,497.9 991.8,551.7 926.3,594.7 825.6,660.8 703.3,721 583.5,709 499.9,700.6 405.5,656.8 364.9,583.2 321,503.5 326.7,386.9 376,310.4 451.8,193 612.2,103.9 750.7,122.3 898.1,141.9 1075,271.2 1083,419.7 Z">Get in touch</a>
+				</nav>
+			</div>
+		</main>
+		<script src="js/anime.min.js"></script>
+		<script src="js/demo.js"></script>
+		<script src="js/demo2.js"></script>
+	</body>
+</html>

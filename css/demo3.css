@@ -1,0 +1,40 @@
+.scene {
+	background: #282886;
+}
+
+.scene path:first-child {
+	fill: #4f4fea;
+}
+
+.scene path:nth-child(2) {
+	fill: #0c27cf;
+}
+
+.scene path:nth-child(3) {
+	fill: #13269c;
+}
+
+.scene path:nth-child(4) {
+	fill: #242468;
+}
+
+.scene path:nth-child(5) {
+	fill: #2648e6;
+}
+
+.scene path:nth-child(6) {
+	fill: #2c31b0;
+}
+
+.scene path:nth-child(7) {
+	fill: #262689;
+}
+
+.title {
+	color: #fff;
+	font-size: 6vw;
+	font-weight: 400;
+	z-index: 1000;
+	font-family: "Arapey", serif;
+	pointer-events: none;
+}

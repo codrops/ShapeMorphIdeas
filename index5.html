@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Organic Shape Morph Ideas | Demo 5 | Codrops</title>
+		<meta name="description" content="Ideas for decorative organic shape animations" />
+		<meta name="keywords" content="animation, svg, organic, morphing, shapes, css, javascript, web design, web dev" />
+		<meta name="author" content="Codrops" />
+		<link rel="shortcut icon" href="favicon.ico">
+		<link href="https://fonts.googleapis.com/css?family=Roboto:400,700,700i" rel="stylesheet">
+		<link rel="stylesheet" type="text/css" href="css/normalize.css" />
+		<link rel="stylesheet" type="text/css" href="css/demo.css" />
+		<link rel="stylesheet" type="text/css" href="css/demo5.css" />
+		<script>document.documentElement.className="js";var supportsCssVars=function(){var e,t=document.createElement("style");return t.innerHTML="root: { --tmp-var: bold; }",document.head.appendChild(t),e=!!(window.CSS&&window.CSS.supports&&window.CSS.supports("font-weight","var(--tmp-var)")),t.parentNode.removeChild(t),e};supportsCssVars()||alert("Please view this demo in a modern browser that supports CSS Variables.");</script>
+	</head>
+	<body class="demo-5">
+		<svg class="hidden">
+			<symbol id="icon-arrow" viewBox="0 0 24 24">
+				<title>arrow</title>
+				<polygon points="6.3,12.8 20.9,12.8 20.9,11.2 6.3,11.2 10.2,7.2 9,6 3.1,12 9,18 10.2,16.8 "/>
+			</symbol>
+			<symbol id="icon-drop" viewBox="0 0 24 24">
+				<title>drop</title>
+				<path d="M12,21c-3.6,0-6.6-3-6.6-6.6C5.4,11,10.8,4,11.4,3.2C11.6,3.1,11.8,3,12,3s0.4,0.1,0.6,0.3c0.6,0.8,6.1,7.8,6.1,11.2C18.6,18.1,15.6,21,12,21zM12,4.8c-1.8,2.4-5.2,7.4-5.2,9.6c0,2.9,2.3,5.2,5.2,5.2s5.2-2.3,5.2-5.2C17.2,12.2,13.8,7.3,12,4.8z"/><path d="M12,18.2c-0.4,0-0.7-0.3-0.7-0.7s0.3-0.7,0.7-0.7c1.3,0,2.4-1.1,2.4-2.4c0-0.4,0.3-0.7,0.7-0.7c0.4,0,0.7,0.3,0.7,0.7C15.8,16.5,14.1,18.2,12,18.2z"/>
+			</symbol>
+			<symbol id="icon-github" viewBox="0 0 32.6 31.8">
+				<title>github</title>
+				<path d="M16.3,0C7.3,0,0,7.3,0,16.3c0,7.2,4.7,13.3,11.1,15.5c0.8,0.1,1.1-0.4,1.1-0.8c0-0.4,0-1.4,0-2.8c-4.5,1-5.5-2.2-5.5-2.2c-0.7-1.9-1.8-2.4-1.8-2.4c-1.5-1,0.1-1,0.1-1c1.6,0.1,2.5,1.7,2.5,1.7c1.5,2.5,3.8,1.8,4.7,1.4c0.1-1.1,0.6-1.8,1-2.2c-3.6-0.4-7.4-1.8-7.4-8.1c0-1.8,0.6-3.2,1.7-4.4C7.4,10.7,6.8,9,7.7,6.8c0,0,1.4-0.4,4.5,1.7c1.3-0.4,2.7-0.5,4.1-0.5c1.4,0,2.8,0.2,4.1,0.5c3.1-2.1,4.5-1.7,4.5-1.7c0.9,2.2,0.3,3.9,0.2,4.3c1,1.1,1.7,2.6,1.7,4.4c0,6.3-3.8,7.6-7.4,8c0.6,0.5,1.1,1.5,1.1,3c0,2.2,0,3.9,0,4.5c0,0.4,0.3,0.9,1.1,0.8c6.5-2.2,11.1-8.3,11.1-15.5C32.6,7.3,25.3,0,16.3,0z"/>
+			</symbol>
+			<symbol id="icon-keyboard" viewBox="0 0 100 70">
+				<title>keyboard</title>
+				<!-- https://thenounproject.com/term/keyboard/783/ by Paul te Kortschot from the Noun Project -->
+				<path d="M 60.94,1.83 39.22,1.83 C 36.71,1.83 34.67,3.86 34.67,6.376 L 34.67,28.1 C 34.67,30.61 36.71,32.65 39.22,32.65 L 60.94,32.65 C 63.45,32.65 65.5,30.61 65.5,28.1 L 65.5,6.376 C 65.5,3.86 63.45,1.83 60.94,1.83 Z M 44.79,18.63 50.08,11.74 55.37,18.63 Z" opacity="0.2"/>
+				<path d="M 60.86,36.75 39.14,36.75 C 36.63,36.75 34.59,38.79 34.59,41.3 L 34.59,63.02 C 34.59,65.53 36.63,67.57 39.14,67.57 L 60.86,67.57 C 63.38,67.57 65.41,65.53 65.41,63.02 L 65.41,41.3 C 65.42,38.79 63.38,36.75 60.86,36.75 Z M 50.08,57.45 44.79,50.55 55.37,50.55 Z" opacity="0.2" />
+				<path d="M 95.45,36.75 73.73,36.75 C 71.22,36.75 69.18,38.79 69.18,41.3 L 69.18,63.02 C 69.18,65.53 71.22,67.57 73.73,67.57 L 95.45,67.57 C 97.97,67.57 100,65.53 100,63.02 L 100,41.3 C 100,38.79 97.97,36.75 95.45,36.75 Z M 83.4,57.45 83.4,46.86 90.3,52.16 Z" />
+				<path d="M 26.27,36.75 4.55,36.75 C 2.037,36.75 0,38.79 0,41.3 L 0,63.02 C 0,65.53 2.037,67.57 4.55,67.57 L 26.27,67.57 C 28.78,67.57 30.82,65.53 30.82,63.02 L 30.82,41.3 C 30.82,38.79 28.78,36.75 26.27,36.75 Z M 16.69,57.45 9.79,52.16 16.69,46.86 Z" />
+			</symbol>
+			<symbol id="icon-close" viewBox="0 0 24 24">
+				<title>close</title>
+				<path d="M 5.5,2.5 C 5.372,2.5 5.244,2.549 5.146,2.646 L 2.646,5.146 C 2.451,5.341 2.451,5.659 2.646,5.854 L 8.793,12 2.646,18.15 C 2.451,18.34 2.451,18.66 2.646,18.85 L 5.146,21.35 C 5.341,21.55 5.659,21.55 5.854,21.35 L 12,15.21 18.15,21.35 C 18.24,21.45 18.37,21.5 18.5,21.5 18.63,21.5 18.76,21.45 18.85,21.35 L 21.35,18.85 C 21.55,18.66 21.55,18.34 21.35,18.15 L 15.21,12 21.35,5.854 C 21.55,5.658 21.55,5.342 21.35,5.146 L 18.85,2.646 C 18.66,2.451 18.34,2.451 18.15,2.646 L 12,8.793 5.854,2.646 C 5.756,2.549 5.628,2.5 5.5,2.5 Z"/>
+			</symbol>
+		</svg>
+		<main>
+			<div class="message">Please view this demo on a desktop.</div>
+			<div class="content content--fixed">
+				<header class="codrops-header">
+					<div class="codrops-links">
+						<a class="codrops-icon codrops-icon--prev" href="https://tympanus.net/Development/MorphingPageTransition/" title="Previous Demo"><svg class="icon icon--arrow"><use xlink:href="#icon-arrow"></use></svg></a>
+						<a class="codrops-icon codrops-icon--drop" href="https://tympanus.net/codrops/?p=32314" title="Back to the article"><svg class="icon icon--drop"><use xlink:href="#icon-drop"></use></svg></a>
+					</div>
+					<h1 class="codrops-header__title">Organic Shape Morph Ideas</h1>
+					<span class="info">Click the shape titles</span>
+				</header>
+				<a class="github" href="https://github.com/codrops/ShapeMorphIdeas/" title="Find this project on GitHub"><svg class="icon icon--github"><use xlink:href="#icon-github"></use></svg></a>
+				<nav class="demos">
+					<svg class="icon icon--keyboard"><use xlink:href="#icon-keyboard"></use></svg>
+					<a class="demo" href="index.html"><span>Demo 1</span></a>
+					<a class="demo" href="index2.html"><span>Demo 2</span></a>
+					<a class="demo" href="index3.html"><span>Demo 3</span></a>
+					<a class="demo" href="index4.html"><span>Demo 4</span></a>
+					<a class="demo demo--current" href="index5.html"><span>Demo 5</span></a>
+				</nav>
+			</div>
+			<div class="content">
+				<svg class="scene" width="1440" height="800" preserveAspectRatio="xMidYMax slice" viewBox="0 0 1440 800" xmlns:pathdata="http://www.codrops.com/">
+					<defs>
+						<!-- Patterns from http://www.heropatterns.com/ -->
+						<pattern class="pattern-color-1" id="pattern_hero" width="52" height="26" patternUnits="userSpaceOnUse">
+							<path d="M10 10c0-2.21-1.79-4-4-4-3.314 0-6-2.686-6-6h2c0 2.21 1.79 4 4 4 3.314 0 6 2.686 6 6 0 2.21 1.79 4 4 4 3.314 0 6 2.686 6 6 0 2.21 1.79 4 4 4v2c-3.314 0-6-2.686-6-6 0-2.21-1.79-4-4-4-3.314 0-6-2.686-6-6zm25.464-1.95l8.486 8.486-1.414 1.414-8.486-8.486 1.414-1.414z" />
+						</pattern>
+						<pattern class="pattern-color-2" id="pattern_2" width="100" height="100" patternUnits="userSpaceOnUse">
+							<path d="M 11,18 C 14.87,18 18,14.87 18,11 18,7.134 14.87,4 11,4 7.134,4 4,7.134 4,11 4,14.87 7.134,18 11,18 Z M 59,43 C 62.87,43 66,39.87 66,36 66,32.13 62.87,29 59,29 55.13,29 52,32.13 52,36 52,39.87 55.13,43 59,43 Z M 16,36 C 17.66,36 19,34.66 19,33 19,31.34 17.66,30 16,30 14.34,30 13,31.34 13,33 13,34.66 14.34,36 16,36 Z M 79,67 C 80.66,67 82,65.66 82,64 82,62.34 80.66,61 79,61 77.34,61 76,62.34 76,64 76,65.66 77.34,67 79,67 Z M 34,90 C 35.66,90 37,88.66 37,87 37,85.34 35.66,84 34,84 32.34,84 31,85.34 31,87 31,88.66 32.34,90 34,90 Z M 90,14 C 91.66,14 93,12.66 93,11 93,9.343 91.66,8 90,8 88.34,8 87,9.343 87,11 87,12.66 88.34,14 90,14 Z M 12,86 C 14.21,86 16,84.21 16,82 16,79.79 14.21,78 12,78 9.791,78 8,79.79 8,82 8,84.21 9.791,86 12,86 Z M 40,21 C 42.21,21 44,19.21 44,17 44,14.79 42.21,13 40,13 37.79,13 36,14.79 36,17 36,19.21 37.79,21 40,21 Z M 63,10 C 65.76,10 68,7.761 68,5 68,2.239 65.76,0 63,0 60.24,0 58,2.239 58,5 58,7.761 60.24,10 63,10 Z M 57,70 C 59.21,70 61,68.21 61,66 61,63.79 59.21,62 57,62 54.79,62 53,63.79 53,66 53,68.21 54.79,70 57,70 Z M 86,92 C 88.76,92 91,89.76 91,87 91,84.24 88.76,82 86,82 83.24,82 81,84.24 81,87 81,89.76 83.24,92 86,92 Z M 32,63 C 34.76,63 37,60.76 37,58 37,55.24 34.76,53 32,53 29.24,53 27,55.24 27,58 27,60.76 29.24,63 32,63 Z M 89,50 C 91.76,50 94,47.76 94,45 94,42.24 91.76,40 89,40 86.24,40 84,42.24 84,45 84,47.76 86.24,50 89,50 Z M 80,29 C 81.1,29 82,28.1 82,27 82,25.9 81.1,25 80,25 78.9,25 78,25.9 78,27 78,28.1 78.9,29 80,29 Z M 60,91 C 61.1,91 62,90.1 62,89 62,87.9 61.1,87 60,87 58.9,87 58,87.9 58,89 58,90.1 58.9,91 60,91 Z M 35,41 C 36.1,41 37,40.1 37,39 37,37.9 36.1,37 35,37 33.9,37 33,37.9 33,39 33,40.1 33.9,41 35,41 Z M 12,60 C 13.1,60 14,59.1 14,58 14,56.9 13.1,56 12,56 10.9,56 10,56.9 10,58 10,59.1 10.9,60 12,60 Z" />
+						</pattern>
+						<pattern class="pattern-color-3" id="pattern_qualm" width="80" height="40" patternUnits="userSpaceOnUse">
+							<path d="M0 40a19.96 19.96 0 0 1 5.9-14.11 20.17 20.17 0 0 1 19.44-5.2A20 20 0 0 1 20.2 40H0zM65.32.75A20.02 20.02 0 0 1 40.8 25.26 20.02 20.02 0 0 1 65.32.76zM.07 0h20.1l-.08.07A20.02 20.02 0 0 1 .75 5.25 20.08 20.08 0 0 1 .07 0zm1.94 40h2.53l4.26-4.24v-9.78A17.96 17.96 0 0 0 2 40zm5.38 0h9.8a17.98 17.98 0 0 0 6.67-16.42L7.4 40zm3.43-15.42v9.17l11.62-11.59c-3.97-.5-8.08.3-11.62 2.42zm32.86-.78A18 18 0 0 0 63.85 3.63L43.68 23.8zm7.2-19.17v9.15L62.43 2.22c-3.96-.5-8.05.3-11.57 2.4zm-3.49 2.72c-4.1 4.1-5.81 9.69-5.13 15.03l6.61-6.6V6.02c-.51.41-1 .85-1.48 1.33zM17.18 0H7.42L3.64 3.78A18 18 0 0 0 17.18 0zM2.08 0c-.01.8.04 1.58.14 2.37L4.59 0H2.07z" />
+						</pattern>
+						<pattern class="pattern-color-4" id="pattern_4" width="36" height="72" patternUnits="userSpaceOnUse">
+							<path d="M 2,6 14,6 8,18 2,6 Z M 20,42 32,42 26,54 20,42 Z" />
+						</pattern>
+						<pattern class="pattern-color-5" id="pattern_5" width="80" height="80" patternUnits="userSpaceOnUse">
+							<path d="M 13.71,-0.339 22.79,11.86 9.39,13.9 Z M 53,31 C 57,31 57,25 53,25 49,25 49,31 53,31 Z M 2.712,65.29 22.71,71.29 22.71,75.29 2.712,69.29 Z M 63,31 C 67,31 67,25 63,25 59,25 59,31 63,31 Z M 73,31 C 77,31 77,25 73,25 69,25 69,31 73,31 Z M 53,41 C 57,41 57,35 53,35 49,35 49,41 53,41 Z M 63,41 C 67,41 67,35 63,35 59,35 59,41 63,41 Z M 73,41 C 77,41 77,35 73,35 69,35 69,41 73,41 Z M 43,41 C 47,41 47,35 43,35 39,35 39,41 43,41 Z" />
+						</pattern>
+						<pattern class="pattern-color-6" id="pattern_waxy" width="120" height="120" patternUnits="userSpaceOnUse">
+							<path d="M 9,0 11,0 11,20 9,20 Z M 34.13,0.8397 35.87,1.84 25.87,19.16 24.13,18.16 Z M 14.13,20.84 15.87,21.84 5.866,39.16 4.134,38.16 Z M 58.16,4.134 59.16,5.866 41.84,15.87 40.84,14.13 Z M 18.16,44.13 19.16,45.87 1.84,55.87 0.8397,54.13 Z M 80,9 80,11 60,11 60,9 Z M 20,69 20,71 0,71 0,69 Z M 99.32,14 98.32,15.73 81,5.732 82,4 Z M 19.32,94 18.32,95.73 1,85.73 2,84 Z M 115.9,18.16 114.1,19.16 104.1,1.84 105.9,0.8397 Z M 15.87,118.2 14.13,119.2 4.134,101.8 5.866,100.8 Z M 38.16,24.13 39.16,25.87 21.84,35.87 20.84,34.13 Z M 60,29 60,31 40,31 40,29 Z M 79.32,34 78.32,35.73 61,25.73 62,24 Z M 95.87,38.16 94.13,39.16 84.13,21.84 85.87,20.84 Z M 111,40 109,40 109,20 111,20 Z M 114.1,40.84 115.9,41.84 105.9,59.16 104.1,58.16 Z M 40,49 40,51 20,51 20,49 Z M 59.32,54 58.32,55.73 41,45.73 42,44 Z M 75.87,58.16 74.13,59.16 64.13,41.84 65.87,40.84 Z M 91,60 89,60 89,40 91,40 Z M 94.13,60.84 95.87,61.84 85.87,79.16 84.13,78.16 Z M 118.2,64.13 119.2,65.87 101.8,75.87 100.8,74.13 Z M 39.32,74 38.32,75.73 21,65.73 22,64 Z M 55.87,78.16 54.13,79.16 44.13,61.84 45.87,60.84 Z M 71,80 69,80 69,60 71,60 Z M 74.13,80.84 75.87,81.84 65.87,99.16 64.13,98.16 Z M 98.16,84.13 99.16,85.87 81.84,95.87 80.84,94.13 Z M 120,89 120,91 100,91 100,89 Z M 35.87,98.16 34.13,99.16 24.13,81.84 25.87,80.84 Z M 51,100 49,100 49,80 51,80 Z M 54.13,100.8 55.87,101.8 45.87,119.2 44.13,118.2 Z M 78.16,104.1 79.16,105.9 61.84,115.9 60.84,114.1 Z M 100,109 100,111 80,111 80,109 Z M 119.3,114 118.3,115.7 101,105.7 102,104 Z M 31,120 29,120 29,100 31,100 Z" />
+						</pattern>
+						<!-- Clip paths -->
+						<clipPath id="clip_hero">
+							<path d="M 147,532.8 C 38,558.3 -88.36,396.5 -76.48,288.1 -62.06,156 148.8,-31.9 254.2,52.6 365.1,141.2 228.8,211.7 211.1,290.3 192.8,371.8 230.3,512.9 147,532.8 Z" pathdata:id="M 58.43,955.7 C -154.8,845.3 -180.1,507.1 -156.5,268.1 -141.3,114.3 -72.22,-56.6 65.63,-138.8 195.3,-216.2 1689,-456 1708,421.7 1722,1031 571.8,1221 58.43,955.7 Z"></path>
+						</clipPath>
+						<clipPath id="clip_qualm">
+							<path d="M 408.8,241.5 C 493.4,347.6 402.7,538.9 342.7,637.1 299.4,706.8 204,827 152.4,739 92.07,636.3 285.2,597.2 296.2,482.6 300,432.1 244.5,368.3 257.4,322.8 277.2,252.7 360.6,180.7 408.8,241.5 Z" pathdata:id="M 1506,41.5 C 1693,263.2 1622,718.8 1400,905.7 1040,1209 362.8,1123 -10.46,836.1 -86.39,777.8 -88.43,657.9 -98.09,562.6 -118.1,365.4 -184.5,100.4 -34.03,-28.63 356.1,-363.1 1174,-351 1506,41.5 Z"></path>
+						</clipPath>
+						<clipPath id="clip_waxy">
+							<path d="M 326.8,24.6 C 374.8,-65 573.9,-62.2 631.7,21.3 685.1,98.4 622.3,267.2 530,283.6 464.6,295.3 438.4,187 398.2,134.1 371.8,99.4 306.3,63 326.8,24.6 Z" pathdata:id="M -61.77,-52.54 C 321.8,-409.9 1183,-383.4 1509,27.01 1726,300.3 1611,858.5 1324,1058 934.2,1329 222.3,1173 -78.94,805.5 -260.3,584.2 -271.1,142.5 -61.77,-52.54 Z"></path>
+						</clipPath>
+						<clipPath id="clip_love">
+							<path d="M 1070,748 C 1038,815 898.9,695.5 849.3,750 794.7,810 938,948 869.7,992 777.8,1050 633.8,927 586.7,829 537.9,727.4 529.2,522.3 638.5,494.9 715.5,475.6 707.4,713 781.8,685.2 881.3,647.8 660,406.2 758.8,367 911.3,306.4 1139,599.6 1070,748 Z" pathdata:id="M 1461,976.6 C 1353,1073 1173,918.1 1029,935.7 973.3,942.6 925.9,986.6 869.7,992 558.2,1022 141.1,1095 -59.01,854.7 -247.3,628.4 -228.7,186.7 -27.21,-27.96 139.2,-205.3 456,-87.8 698.9,-100.5 960.4,-114.2 1301,-291.1 1485,-104.4 1737,152.5 1731,736.9 1461,976.6 Z"></path>
+						</clipPath>
+						<clipPath id="clip_woods">
+							<path d="M 1180,148 C 1125,121.3 1052,259.1 1008,219.2 942.4,159.1 1042,15.8 1134,-8.2 1216,-30.3 1331,37.6 1358,111.6 1392,207.4 1330,400.2 1218,386 1129,374.7 1259,186.2 1180,148 Z" pathdata:id="M 140,996.6 C -30.63,894.6 -80.93,650.6 -106.3,453.5 -131.5,257.4 -161.8,-9.362 -6,-131.1 385.7,-437 1136,-377.8 1481,-19.83 1694,201.9 1721,674.3 1515,903.1 1208,1245 534.4,1232 140,996.6 Z"></path>
+						</clipPath>
+						<clipPath id="clip_beach">
+							<path d="M 1473,416.7 C 1556,492.7 1420,630.9 1395,738.5 1377,818 1425,977 1344,978 1180,979 1156,641.4 1236,498.4 1277,425.4 1411,358.5 1473,416.7 Z" pathdata:id="M 1473,-37.59 C 1741,63.56 1748,650 1538,867.1 1162,1254 295.9,1189 -78.86,800.9 -259.4,614 -263.6,209 -84,21.26 275,-354 1015,-210.7 1473,-37.59 Z"></path>
+						</clipPath>
+					</defs>
+					<g class="shape" clip-path="url(#clip_hero)">
+						<rect class="rect-color-hero" x="0" y="0" width="100%" height="100%"></rect>
+						<rect fill="url(#pattern_hero)" x="0" y="0" width="100%" height="100%"></rect>
+					</g>
+					<g class="shape" clip-path="url(#clip_qualm)">
+						<rect class="rect-color-3" x="0" y="0" width="1440" height="800"></rect>
+						<rect fill="url(#pattern_qualm)" x="0" y="0" width="1440" height="800"></rect>
+					</g>
+					<g class="shape" clip-path="url(#clip_waxy)">
+						<rect class="rect-color-6" x="0" y="0" width="1440" height="800"></rect>
+						<rect fill="url(#pattern_waxy)" x="0" y="0" width="1440" height="800"></rect>
+					</g>
+					<g class="shape" clip-path="url(#clip_love)">
+						<rect class="rect-color-5" x="0" y="0" width="1440" height="800"></rect>
+						<rect fill="url(#pattern_5)" x="0" y="0" width="1440" height="800"></rect>
+					</g>
+					<g class="shape" clip-path="url(#clip_woods)">
+						<rect class="rect-color-2" x="0" y="0" width="1440" height="800"></rect>
+						<rect fill="url(#pattern_2)" x="0" y="0" width="1440" height="800"></rect>
+					</g>
+					<g class="shape" clip-path="url(#clip_beach)">
+						<rect class="rect-color-4" x="0" y="0" width="1440" height="800"></rect>
+						<rect fill="url(#pattern_4)" x="0" y="0" width="1440" height="800"></rect>
+					</g>
+					<a class="label" href="#content-hero">
+						<text x="85" y="256"><tspan>#1</tspan> <tspan>Hero</tspan></text>
+					</a>
+					<a class="label" href="#content-qualm">
+						<text x="348" y="540"><tspan>#2</tspan> <tspan>Qualm</tspan></text>
+					</a>
+					<a class="label" href="#content-waxy">
+						<text x="506" y="251"><tspan>#3</tspan> <tspan>Waxy</tspan></text>
+					</a>
+					<a class="label" href="#content-love">
+						<text x="815" y="600"><tspan>#4</tspan> <tspan>Love</tspan></text>
+					</a>
+					<a class="label" href="#content-woods">
+						<text x="1016" y="184"><tspan>#5</tspan> <tspan>Woods</tspan></text>
+					</a>
+					<a class="label" href="#content-beach">
+						<text x="1150" y="550"><tspan>#6</tspan> <tspan>Beach</tspan></text>
+					</a>
+				</svg>
+			</div>
+			<div class="content content--reveal">
+				<div class="content__inner" id="content-hero">
+					<h2 class="content__title">Hero.</h2>
+					<svg class="content__img content__img--1" width="200" height="200" viewBox="0 0 200 200">
+						<rect x="0" y="0" width="200" height="200"></rect>
+						<circle stroke-width="35" cx="50" cy="50" r="100"></circle>
+					</svg>
+					<svg class="content__img content__img--2" width="200" height="200" viewBox="0 0 200 200">
+						<rect x="0" y="0" width="200" height="200"></rect>
+						<polygon stroke-width="35" points="58 60.5 322.5 7.5 218 281"></polygon>
+					</svg>
+					<h3 class="content__subtitle">An unkissed loaf's hydrogen comes with it.</h3>
+				</div>
+				<div class="content__inner" id="content-qualm">
+					<h2 class="content__title">Qualm.</h2>
+					<svg class="content__img content__img--1" width="200" height="200" viewBox="0 0 200 200">
+						<rect x="0" y="0" width="200" height="200"></rect>
+						<circle stroke-width="35" cx="50" cy="50" r="100"></circle>
+					</svg>
+					<svg class="content__img content__img--2" width="200" height="200" viewBox="0 0 200 200">
+						<rect x="0" y="0" width="200" height="200"></rect>
+						<polygon stroke-width="35" points="58 60.5 322.5 7.5 218 281"></polygon>
+					</svg>
+					<h3 class="content__subtitle">The pinks could be said to resemble freeborn squirrels.</h3>
+				</div>
+				<div class="content__inner" id="content-waxy">
+					<h2 class="content__title">Waxy.</h2>
+					<svg class="content__img content__img--1" width="200" height="200" viewBox="0 0 200 200">
+						<rect x="0" y="0" width="200" height="200"></rect>
+						<circle stroke-width="35" cx="50" cy="50" r="100"></circle>
+					</svg>
+					<svg class="content__img content__img--2" width="200" height="200" viewBox="0 0 200 200">
+						<rect x="0" y="0" width="200" height="200"></rect>
+						<polygon stroke-width="35" points="58 60.5 322.5 7.5 218 281"></polygon>
+					</svg>
+					<h3 class="content__subtitle">A surgeon is the glue of a purchase.</h3>
+				</div>
+				<div class="content__inner" id="content-love">
+					<h2 class="content__title">Love.</h2>
+					<svg class="content__img content__img--1" width="200" height="200" viewBox="0 0 200 200">
+						<rect x="0" y="0" width="200" height="200"></rect>
+						<circle stroke-width="35" cx="50" cy="50" r="100"></circle>
+					</svg>
+					<svg class="content__img content__img--2" width="200" height="200" viewBox="0 0 200 200">
+						<rect x="0" y="0" width="200" height="200"></rect>
+						<polygon stroke-width="35" points="58 60.5 322.5 7.5 218 281"></polygon>
+					</svg>
+					<h3 class="content__subtitle">Authors often misinterpret the korean as a heavies gemini.</h3>
+				</div>
+				<div class="content__inner" id="content-woods">
+					<h2 class="content__title">Woods.</h2>
+					<svg class="content__img content__img--1" width="200" height="200" viewBox="0 0 200 200">
+						<rect x="0" y="0" width="200" height="200"></rect>
+						<circle stroke-width="35" cx="50" cy="50" r="100"></circle>
+					</svg>
+					<svg class="content__img content__img--2" width="200" height="200" viewBox="0 0 200 200">
+						<rect x="0" y="0" width="200" height="200"></rect>
+						<polygon stroke-width="35" points="58 60.5 322.5 7.5 218 281"></polygon>
+					</svg>
+					<h3 class="content__subtitle">Some servo tips are thought of simply as russias.</h3>
+				</div>
+				<div class="content__inner" id="content-beach">
+					<h2 class="content__title">Beach.</h2>
+					<svg class="content__img content__img--1" width="200" height="200" viewBox="0 0 200 200">
+						<rect x="0" y="0" width="200" height="200"></rect>
+						<circle stroke-width="35" cx="50" cy="50" r="100"></circle>
+					</svg>
+					<svg class="content__img content__img--2" width="200" height="200" viewBox="0 0 200 200">
+						<rect x="0" y="0" width="200" height="200"></rect>
+						<polygon stroke-width="35" points="58 60.5 322.5 7.5 218 281"></polygon>
+					</svg>
+					<h3 class="content__subtitle">To be more specific, the angora is a quilt.</h3>
+				</div>
+				<button class="content__close"><svg class="icon icon--close"><use xlink:href="#icon-close"></use></svg></button>
+			</div>
+		</main>
+		<script src="js/anime.min.js"></script>
+		<script src="js/demo.js"></script>
+		<script src="js/demo5.js"></script>
+	</body>
+</html>

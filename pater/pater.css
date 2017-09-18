@@ -1,0 +1,146 @@
+.pater {
+	font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif !important;
+	position: fixed;
+	z-index: 1000;
+	right: 0;
+	bottom: 0;
+	display: grid;
+	width: 100%;
+	padding: 1em 0;
+	text-align: left;
+	color: #333;
+	background: #ddd;
+	grid-template-columns: auto;
+	grid-template-rows: auto auto auto;
+}
+
+.pater:hover,
+.pater:focus {
+	color: #000;
+}
+
+.pater--theme-alt {
+	background: #333333;
+	color: #e2e2e2;
+}
+
+.pater--theme-alt:hover,
+.pater--theme-alt:focus {
+	color: #fff;
+}
+
+.pater::before {
+	content: 'Our Sponsor';
+	font-size: 0.75em;
+	display: inline-block;
+	padding: 0 0 5px 10px;
+	vertical-align: middle;
+	grid-area: 1 / 1 / 2 / 2;
+}
+
+.pater__img {
+	display: none;
+	overflow: hidden;
+	background-image: url(jetpack.png);
+	background-size: cover;
+	grid-area: 2 / 1 / 3 / 2;
+}
+
+.pater__img-inner {
+	background: url(jetpack_man.png) no-repeat 0 100%	;
+	background-size: 150px;
+	width: 100%;
+	height: 100%;
+}
+
+.pater:hover .pater__img-inner {
+	animation: animMan 0.4s cubic-bezier(0.1,1,0.3,1) forwards;
+}
+
+@keyframes animMan {
+	25% {
+		opacity: 0;
+		transform: translate3d(0,0,0);
+	}
+	26% {
+		opacity: 0;
+		transform: translate3d(-100%,100%,0) scale3d(0.1,0.1,1);
+	}
+	100% {
+		opacity: 1;
+		transform: translate3d(0,0,0);
+	}
+}
+
+.pater__title {
+	font-size: 0.85em;
+	font-weight: normal;
+	font-weight: bold;
+	align-self: end;
+	margin: 0;
+}
+
+.pater__title,
+.pater__description {
+	align-self: start;
+	padding: 10px 0 0 10px;
+	grid-area: 2 / 1 / 3 / 3;
+}
+
+.pater__description {
+	font-size: 0.85em;
+	display: none;
+	margin: 0;
+	opacity: 0;
+}
+
+.pater__description strong {
+	display: block;
+	padding-top: 5px;
+	color: #ee4e97;
+}
+
+@media screen and (min-width: 60em) {
+	.pater {
+		top: 0;
+		right: 0;
+		bottom: auto;
+		width: calc(180px + 2em);
+		margin: 0 1.5em 0 0;
+		padding: 0;
+		padding: 1em;
+		text-align: right;
+		border-radius: 0 0 5px 5px;
+		background: #f9f9f9;
+	}
+	.pater--theme-alt {
+		background: #333333;
+	}
+	.pater__img {
+		display: flex;
+		width: 100%;
+		height: 180px;
+	}
+	.pater::before {
+		display: block;
+		padding: 0 0 10px 0;
+	}
+	.pater:hover .pater__title {
+		opacity: 0;
+	}
+	.pater:hover .pater__description {
+		opacity: 1;
+	}
+	.pater__description {
+		display: block;
+	}
+	.pater__title {
+		padding: 10px;
+	}
+	.pater__title,
+	.pater__description {
+		padding-left: 0;
+		transition: opacity 0.5s;
+		grid-area: 3 / 1 / 4 / 2;
+	}
+}
