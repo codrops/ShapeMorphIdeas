@@ -8,6 +8,8 @@ A small set of ideas for organic shape effects. The demos show some ways to use 
 
 [Demo](http://tympanus.net/Development/ShapeMorphIdeas/)
 
+This demo is kindly sponsored by: [Jetpack Professional](http://go.hackingui.com/JetpackCodrops19092017), the only WordPress plugin you really need.
+
 ## Credits
 
 - [anime.js](http://anime-js.com/) by Julian Garnier
